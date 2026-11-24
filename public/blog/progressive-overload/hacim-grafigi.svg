@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t">
+  <title id="t">9 haftalık squat hacmi: 8 hafta artış, 6. haftada deload</title>
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="560" fill="#163e2e"/>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="40" fill="#8ccf88">HAFTALIK SQUAT HACMİ (kg)</text>
+  <text x="40" y="88" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#9fbf7f">Hacim = ağırlık × toplam tekrar · örnek veri</text>
+  <!-- grid: 3000→470, 4000→385, 5000→300, 6000→215, 7000→130 -->
+  <g stroke="#244b37" stroke-width="2">
+    <line x1="110" y1="130" x2="940" y2="130"/>
+    <line x1="110" y1="215" x2="940" y2="215"/>
+    <line x1="110" y1="300" x2="940" y2="300"/>
+    <line x1="110" y1="385" x2="940" y2="385"/>
+  </g>
+  <line x1="110" y1="470" x2="940" y2="470" stroke="#9fbf7f" stroke-width="2"/>
+  <line x1="110" y1="130" x2="110" y2="470" stroke="#9fbf7f" stroke-width="2"/>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6" text-anchor="end">
+    <text x="100" y="135">7000</text>
+    <text x="100" y="220">6000</text>
+    <text x="100" y="305">5000</text>
+    <text x="100" y="390">4000</text>
+    <text x="100" y="475">3000</text>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6" text-anchor="middle">
+    <text x="110" y="496">H1</text>
+    <text x="213.75" y="496">H2</text>
+    <text x="317.5" y="496">H3</text>
+    <text x="421.25" y="496">H4</text>
+    <text x="525" y="496">H5</text>
+    <text x="628.75" y="496">H6</text>
+    <text x="732.5" y="496">H7</text>
+    <text x="836.25" y="496">H8</text>
+    <text x="940" y="496">H9</text>
+  </g>
+  <text x="525" y="530" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#9fbf7f">Hafta</text>
+  <!-- deload bandı -->
+  <rect x="590" y="130" width="78" height="340" fill="#c9a45c" opacity="0.14"/>
+  <text x="628.75" y="152" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#c9a45c">DELOAD</text>
+  <!-- çizgi: 4800,5100,5400,5700,6000,3600,6100,6400,6700 -->
+  <polyline fill="none" stroke="#8ccf88" stroke-width="4" stroke-linejoin="miter"
+    points="110,317 213.75,291.5 317.5,266 421.25,240.5 525,215 628.75,419 732.5,206.5 836.25,181 940,155.5"/>
+  <g fill="#eef0d6" stroke="#163e2e" stroke-width="2">
+    <rect x="104" y="311" width="12" height="12"/>
+    <rect x="207.75" y="285.5" width="12" height="12"/>
+    <rect x="311.5" y="260" width="12" height="12"/>
+    <rect x="415.25" y="234.5" width="12" height="12"/>
+    <rect x="519" y="209" width="12" height="12"/>
+    <rect x="622.75" y="413" width="12" height="12" fill="#c9a45c"/>
+    <rect x="726.5" y="200.5" width="12" height="12"/>
+    <rect x="830.25" y="175" width="12" height="12"/>
+    <rect x="934" y="149.5" width="12" height="12"/>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#fffce9" text-anchor="middle">
+    <text x="128" y="306" text-anchor="start">4800</text>
+    <text x="213.75" y="276">5100</text>
+    <text x="317.5" y="251">5400</text>
+    <text x="421.25" y="225">5700</text>
+    <text x="525" y="200">6000</text>
+    <text x="628.75" y="445" fill="#c9a45c">3600</text>
+    <text x="732.5" y="191">6100</text>
+    <text x="836.25" y="166">6400</text>
+    <text x="925" y="141">6700</text>
+  </g>
+  <text x="680" y="400" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#c9a45c">hacim ~%40 düşer</text>
+  <rect width="1000" height="560" fill="url(#scan)"/>
+</svg>

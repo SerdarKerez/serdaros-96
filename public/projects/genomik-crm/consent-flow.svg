@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500">
+<defs><pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity="0.18"/></pattern>
+<marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c9a45c"/></marker>
+<marker id="ar2" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#b5523b"/></marker></defs>
+<rect width="1200" height="500" fill="#163e2e"/>
+<text x="40" y="58" font-family="VT323, monospace" font-size="44" fill="#fffce9">RIZA VE VERİ AKIŞI</text>
+<text x="540" y="56" font-family="VT323, monospace" font-size="24" fill="#c9a45c">önce rıza, sonra işlem</text>
+<g font-family="Tahoma, Verdana, sans-serif" text-anchor="middle">
+<rect x="40" y="110" width="190" height="110" fill="#244b37" stroke="#c9a45c" stroke-width="3"/>
+<text x="135" y="146" font-family="VT323, monospace" font-size="26" fill="#fffce9">1. RIZA</text>
+<text x="135" y="176" font-size="13" fill="#eef0d6">kapsam seçimi</text><text x="135" y="198" font-size="13" fill="#eef0d6">kayıt + zaman damgası</text>
+<rect x="280" y="110" width="190" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="375" y="146" font-family="VT323, monospace" font-size="26" fill="#fffce9">2. YÜKLEME</text>
+<text x="375" y="176" font-size="13" fill="#eef0d6">şifreli aktarım</text><text x="375" y="198" font-size="13" fill="#eef0d6">sample_id atanır</text>
+<rect x="520" y="110" width="190" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="615" y="146" font-family="VT323, monospace" font-size="26" fill="#fffce9">3. İŞLEME</text>
+<text x="615" y="176" font-size="13" fill="#eef0d6">rıza kontrolü</text><text x="615" y="198" font-size="13" fill="#eef0d6">QC · anotasyon</text>
+<rect x="760" y="110" width="190" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="855" y="146" font-family="VT323, monospace" font-size="26" fill="#fffce9">4. RAPOR</text>
+<text x="855" y="176" font-size="13" fill="#eef0d6">yalnız izinli bölümler</text><text x="855" y="198" font-size="13" fill="#eef0d6">doğrulama uyarısı</text>
+<rect x="1000" y="110" width="160" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="1080" y="146" font-family="VT323, monospace" font-size="26" fill="#fffce9">5. SAKLAMA</text>
+<text x="1080" y="176" font-size="13" fill="#eef0d6">ham dosya</text><text x="1080" y="198" font-size="13" fill="#eef0d6">süre sonunda silinir</text>
+</g>
+<g stroke="#c9a45c" stroke-width="3" marker-end="url(#ar)">
+<line x1="232" y1="165" x2="276" y2="165"/><line x1="472" y1="165" x2="516" y2="165"/><line x1="712" y1="165" x2="756" y2="165"/><line x1="952" y1="165" x2="996" y2="165"/>
+</g>
+<!-- revoke / delete -->
+<rect x="40" y="290" width="300" height="150" fill="#1d3324" stroke="#b5523b" stroke-width="3"/>
+<rect x="40" y="290" width="300" height="36" fill="#b5523b"/>
+<text x="190" y="316" font-family="VT323, monospace" font-size="26" fill="#fffce9" text-anchor="middle">RIZA GERİ ALINDI</text>
+<g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#eef0d6">
+<text x="60" y="356">revoked_at doldurulur</text><text x="60" y="382">ilgili kapsam sorgulardan düşer</text><text x="60" y="408">yeni rapor bölümü üretilmez</text>
+</g>
+<rect x="420" y="290" width="740" height="150" fill="#1d3324" stroke="#b5523b" stroke-width="3"/>
+<rect x="420" y="290" width="740" height="36" fill="#b5523b"/>
+<text x="790" y="316" font-family="VT323, monospace" font-size="26" fill="#fffce9" text-anchor="middle">SİLME TALEBİ: TÜM KATMANLARA YAYILIR</text>
+<g font-family="VT323, monospace" font-size="22" text-anchor="middle">
+<rect x="440" y="350" width="160" height="40" fill="#244b37" stroke="#9fbf7f" stroke-width="2"/><text x="520" y="377" fill="#eef0d6">NESNE DEPOSU</text>
+<rect x="620" y="350" width="160" height="40" fill="#244b37" stroke="#9fbf7f" stroke-width="2"/><text x="700" y="377" fill="#eef0d6">PARQUET</text>
+<rect x="800" y="350" width="160" height="40" fill="#244b37" stroke="#9fbf7f" stroke-width="2"/><text x="880" y="377" fill="#eef0d6">AMBAR</text>
+<rect x="980" y="350" width="160" height="40" fill="#244b37" stroke="#9fbf7f" stroke-width="2"/><text x="1060" y="377" fill="#eef0d6">CRM + YEDEK</text>
+</g>
+<text x="440" y="422" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">audit_log'da yalnızca "silindi" kaydı kalır, genomik veri kalmaz</text>
+<path d="M135 222 L135 286" stroke="#b5523b" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#ar2)"/>
+<path d="M342 365 L416 365" stroke="#b5523b" stroke-width="3" stroke-dasharray="6 4" marker-end="url(#ar2)"/>
+<text x="379" y="350" font-family="Tahoma, Verdana, sans-serif" font-size="12" fill="#b5523b" text-anchor="middle">istenirse</text>
+<text x="1160" y="480" font-family="Tahoma, Verdana, sans-serif" font-size="12" fill="#9fbf7f" text-anchor="end">Konsept akış · KVKK / GDPR ilkelerine göre tasarlandı</text>
+<rect width="1200" height="500" fill="url(#sl)"/>
+</svg>

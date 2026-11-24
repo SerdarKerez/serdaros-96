@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+<defs><pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity="0.18"/></pattern></defs>
+<rect width="1200" height="600" fill="#163e2e"/>
+<rect x="40" y="30" width="1120" height="540" fill="#1d3324" stroke="#9fbf7f" stroke-width="4"/>
+<rect x="40" y="30" width="1120" height="40" fill="#9fbf7f"/>
+<text x="60" y="60" font-family="VT323, monospace" font-size="26" fill="#163e2e">MÜŞTERİ KARTI — örnek ekran (kurgusal veri)</text>
+<rect x="1100" y="40" width="20" height="20" fill="#163e2e"/><rect x="1130" y="40" width="20" height="20" fill="#b5523b"/>
+<!-- profile -->
+<rect x="70" y="100" width="340" height="190" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<rect x="90" y="120" width="80" height="80" fill="#1d3324" stroke="#c9a45c" stroke-width="3"/>
+<rect x="115" y="135" width="30" height="30" fill="#c9a45c"/><rect x="102" y="170" width="56" height="22" fill="#c9a45c"/>
+<g font-family="Tahoma, Verdana, sans-serif">
+<text x="186" y="145" font-size="19" fill="#fffce9">Örnek Müşteri</text>
+<text x="186" y="170" font-size="13" fill="#9fbf7f">Müşteri no: C-0000</text>
+<text x="186" y="192" font-size="13" fill="#9fbf7f">sample_id: S-0000</text>
+<text x="90" y="232" font-size="13" fill="#eef0d6">Danışman: (atanmadı)</text>
+<text x="90" y="256" font-size="13" fill="#eef0d6">Son görüşme: — </text>
+<text x="90" y="278" font-size="12" fill="#9fbf7f">Kimlik bilgisi yalnızca CRM'de tutulur</text>
+</g>
+<!-- consents -->
+<rect x="70" y="310" width="340" height="230" fill="#244b37" stroke="#c9a45c" stroke-width="3"/>
+<text x="90" y="342" font-family="VT323, monospace" font-size="28" fill="#fffce9">RIZALAR</text>
+<g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">
+<rect x="90" y="362" width="18" height="18" fill="#8ccf88"/><text x="120" y="377">Veri işleme</text><text x="390" y="377" text-anchor="end" fill="#8ccf88">aktif</text>
+<rect x="90" y="400" width="18" height="18" fill="#8ccf88"/><text x="120" y="415">Rapor üretimi</text><text x="390" y="415" text-anchor="end" fill="#8ccf88">aktif</text>
+<rect x="90" y="438" width="18" height="18" fill="#1d3324" stroke="#c9a45c" stroke-width="2"/><text x="120" y="453">Farmakogenomik</text><text x="390" y="453" text-anchor="end" fill="#c9a45c">verilmedi</text>
+<rect x="90" y="476" width="18" height="18" fill="#b5523b"/><text x="120" y="491">Araştırma</text><text x="390" y="491" text-anchor="end" fill="#b5523b">geri alındı</text>
+<text x="90" y="526" font-size="12" fill="#9fbf7f">Her değişiklik audit_log'a yazılır</text>
+</g>
+<!-- file status -->
+<rect x="440" y="100" width="690" height="190" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="460" y="132" font-family="VT323, monospace" font-size="28" fill="#fffce9">DOSYA DURUMU</text>
+<g font-family="VT323, monospace" font-size="22" text-anchor="middle">
+<rect x="460" y="160" width="140" height="44" fill="#8ccf88"/><text x="530" y="189" fill="#163e2e">YÜKLENDİ</text>
+<rect x="620" y="160" width="140" height="44" fill="#8ccf88"/><text x="690" y="189" fill="#163e2e">NORMALİZE</text>
+<rect x="780" y="160" width="140" height="44" fill="#8ccf88"/><text x="850" y="189" fill="#163e2e">QC</text>
+<rect x="940" y="160" width="170" height="44" fill="#1d3324" stroke="#c9a45c" stroke-width="3"/><text x="1025" y="189" fill="#c9a45c">ANOTASYON…</text>
+</g>
+<g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#eef0d6">
+<text x="460" y="236">Format: örnek sağlayıcı (TSV)</text><text x="760" y="236">Referans: GRCh37 → GRCh38</text>
+<text x="460" y="262">Call rate: —</text><text x="760" y="262">Ham dosya silinme tarihi: —</text>
+</g>
+<!-- reports -->
+<rect x="440" y="310" width="690" height="230" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="460" y="342" font-family="VT323, monospace" font-size="28" fill="#fffce9">RAPORLAR</text>
+<rect x="460" y="356" width="650" height="30" fill="#1d3324"/>
+<g font-family="Tahoma, Verdana, sans-serif" font-size="13">
+<text x="472" y="376" fill="#9fbf7f">Bölüm</text><text x="760" y="376" fill="#9fbf7f">Rıza</text><text x="940" y="376" fill="#9fbf7f">Durum</text>
+<text x="472" y="412" fill="#eef0d6">Genel özet ve QC</text><text x="760" y="412" fill="#8ccf88">var</text><text x="940" y="412" fill="#eef0d6">taslak</text>
+<text x="472" y="444" fill="#eef0d6">Özellikler (trait)</text><text x="760" y="444" fill="#8ccf88">var</text><text x="940" y="444" fill="#eef0d6">taslak</text>
+<text x="472" y="476" fill="#eef0d6">Farmakogenomik</text><text x="760" y="476" fill="#c9a45c">yok</text><text x="940" y="476" fill="#c9a45c">gizlendi</text>
+</g>
+<rect x="460" y="494" width="650" height="32" fill="#b5523b"/>
+<text x="785" y="516" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#fffce9" text-anchor="middle">Bilgilendirme amaçlıdır, tanı koymaz. Klinik doğrulama gerekir.</text>
+<rect width="1200" height="600" fill="url(#sl)"/>
+</svg>

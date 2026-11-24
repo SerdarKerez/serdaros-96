@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="g" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M20 0H0V20" fill="none" stroke="#244b37" stroke-width="1"/>
+    </pattern>
+    <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#c9a45c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#163e2e"/>
+  <rect width="1200" height="520" fill="url(#g)"/>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="42" fill="#fffce9">END-TO-END DATA PIPELINE</text>
+  <text x="40" y="88" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#9fbf7f">source → ingest → lake → transform → warehouse → serve</text>
+
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#163e2e" text-anchor="middle">
+    <!-- sources -->
+    <text x="100" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">SOURCES</text>
+    <rect x="40" y="170" width="120" height="50" fill="#eef0d6"/><text x="100" y="200">App DB</text>
+    <rect x="40" y="235" width="120" height="50" fill="#eef0d6"/><text x="100" y="265">API / SaaS</text>
+    <rect x="40" y="300" width="120" height="50" fill="#eef0d6"/><text x="100" y="330">Log / Event</text>
+    <rect x="40" y="365" width="120" height="50" fill="#eef0d6"/><text x="100" y="395">Files</text>
+
+    <!-- ingest -->
+    <text x="285" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">INGEST</text>
+    <rect x="215" y="215" width="140" height="150" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="285" y="265" fill="#fffce9">Batch</text>
+    <text x="285" y="292" fill="#fffce9">Streaming</text>
+    <text x="285" y="319" fill="#fffce9">CDC</text>
+
+    <!-- lake -->
+    <text x="470" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">DATA LAKE</text>
+    <rect x="400" y="215" width="140" height="150" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <rect x="420" y="235" width="100" height="22" fill="#9fbf7f"/>
+    <rect x="420" y="265" width="100" height="22" fill="#9fbf7f"/>
+    <rect x="420" y="295" width="100" height="22" fill="#9fbf7f"/>
+    <text x="470" y="347" fill="#fffce9">raw data</text>
+
+    <!-- transform -->
+    <text x="655" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">TRANSFORM</text>
+    <rect x="585" y="215" width="140" height="150" fill="#244b37" stroke="#c9a45c" stroke-width="3"/>
+    <text x="655" y="260" fill="#fffce9">SQL / dbt</text>
+    <text x="655" y="287" fill="#fffce9">Spark</text>
+    <text x="655" y="314" fill="#fffce9">tests</text>
+
+    <!-- warehouse -->
+    <text x="840" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">WAREHOUSE</text>
+    <rect x="770" y="215" width="140" height="150" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <rect x="790" y="235" width="44" height="40" fill="#8ccf88"/><rect x="846" y="235" width="44" height="40" fill="#8ccf88"/>
+    <rect x="790" y="285" width="100" height="40" fill="#c9a45c"/>
+    <text x="840" y="350" fill="#fffce9">fact + dim</text>
+
+    <!-- consumers -->
+    <text x="1060" y="150" font-family="VT323, monospace" font-size="24" fill="#eef0d6">SERVING</text>
+    <rect x="1000" y="170" width="120" height="50" fill="#eef0d6"/><text x="1060" y="200">BI / Reports</text>
+    <rect x="1000" y="235" width="120" height="50" fill="#eef0d6"/><text x="1060" y="265">ML model</text>
+    <rect x="1000" y="300" width="120" height="50" fill="#eef0d6"/><text x="1060" y="330">Feature store</text>
+    <rect x="1000" y="365" width="120" height="50" fill="#eef0d6"/><text x="1060" y="395">RAG / LLM</text>
+  </g>
+
+  <g stroke="#c9a45c" stroke-width="3" fill="none" marker-end="url(#ar)">
+    <path d="M160 195H185V270H210"/>
+    <path d="M160 260H185"/>
+    <path d="M160 325H185V310H210"/>
+    <path d="M160 390H185V310"/>
+    <path d="M355 290H395"/>
+    <path d="M540 290H580"/>
+    <path d="M725 290H765"/>
+    <path d="M910 290H940V195H995"/>
+    <path d="M940 260H995"/>
+    <path d="M940 290V325H995"/>
+    <path d="M940 325V390H995"/>
+  </g>
+
+  <!-- lakehouse bracket -->
+  <rect x="400" y="380" width="510" height="4" fill="#8ccf88"/>
+  <rect x="400" y="372" width="4" height="12" fill="#8ccf88"/><rect x="906" y="372" width="4" height="12" fill="#8ccf88"/>
+  <text x="655" y="408" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#8ccf88">Lakehouse: lake + warehouse (Iceberg / Delta)</text>
+
+  <!-- orchestration bar -->
+  <rect x="40" y="440" width="1080" height="44" fill="#1d3324" stroke="#c9a45c" stroke-width="3"/>
+  <text x="60" y="470" font-family="VT323, monospace" font-size="26" fill="#c9a45c">ORCHESTRATION</text>
+  <text x="280" y="468" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#eef0d6">Airflow / Dagster: scheduling, dependencies, retry  ·  Quality: schema, lineage, freshness</text>
+</svg>

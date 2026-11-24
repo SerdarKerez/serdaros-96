@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t">
+  <title id="t">Çift aşamalı ilerleme merdiveni: 3 set, 8-12 tekrar aralığı</title>
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="560" fill="#163e2e"/>
+  <text x="40" y="56" font-family="VT323, monospace" font-size="40" fill="#8ccf88">ÇİFT AŞAMALI İLERLEME</text>
+  <text x="40" y="86" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#9fbf7f">3 set · hedef aralık 8–12 tekrar · tüm setler 12 olunca ağırlık artar</text>
+  <!-- basamaklar: her biri 170 genişlik, 70 yükselir -->
+  <g font-family="Tahoma, Verdana, sans-serif" text-anchor="middle">
+    <rect x="40" y="440" width="170" height="80" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="125" y="468" font-family="VT323, monospace" font-size="28" fill="#eef0d6">HAFTA 1</text>
+    <text x="125" y="490" font-size="15" fill="#fffce9">40 kg</text>
+    <text x="125" y="510" font-size="15" fill="#9fbf7f">8 / 8 / 8</text>
+
+    <rect x="220" y="370" width="170" height="150" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="305" y="398" font-family="VT323, monospace" font-size="28" fill="#eef0d6">HAFTA 2</text>
+    <text x="305" y="420" font-size="15" fill="#fffce9">40 kg</text>
+    <text x="305" y="440" font-size="15" fill="#9fbf7f">10 / 9 / 9</text>
+
+    <rect x="400" y="300" width="170" height="220" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="485" y="328" font-family="VT323, monospace" font-size="28" fill="#eef0d6">HAFTA 3</text>
+    <text x="485" y="350" font-size="15" fill="#fffce9">40 kg</text>
+    <text x="485" y="370" font-size="15" fill="#9fbf7f">11 / 10 / 10</text>
+
+    <rect x="580" y="230" width="170" height="290" fill="#244b37" stroke="#8ccf88" stroke-width="3"/>
+    <text x="665" y="258" font-family="VT323, monospace" font-size="28" fill="#eef0d6">HAFTA 4</text>
+    <text x="665" y="280" font-size="15" fill="#fffce9">40 kg</text>
+    <text x="665" y="300" font-size="15" fill="#8ccf88">12 / 12 / 12 ✓</text>
+
+    <rect x="760" y="160" width="200" height="360" fill="#c9a45c" stroke="#0f2419" stroke-width="3"/>
+    <text x="860" y="188" font-family="VT323, monospace" font-size="28" fill="#163e2e">HAFTA 5</text>
+    <text x="860" y="210" font-size="15" fill="#163e2e">42,5 kg</text>
+    <text x="860" y="230" font-size="15" fill="#163e2e">8 / 8 / 8</text>
+    <text x="860" y="270" font-size="13" fill="#163e2e">yeni ağırlık,</text>
+    <text x="860" y="288" font-size="13" fill="#163e2e">tekrar aralığın altı</text>
+  </g>
+  <!-- ok -->
+  <g fill="#b5523b">
+    <rect x="700" y="140" width="40" height="10"/>
+    <rect x="740" y="132" width="10" height="26"/>
+    <rect x="750" y="138" width="8" height="14"/>
+  </g>
+  <text x="560" y="150" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">+2,5 kg, tekrara dön</text>
+  <line x1="30" y1="520" x2="970" y2="520" stroke="#eef0d6" stroke-width="3"/>
+  <rect width="1000" height="560" fill="url(#scan)"/>
+</svg>

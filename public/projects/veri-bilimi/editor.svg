@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.14"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="560" fill="#1d3324"/>
+  <!-- window -->
+  <rect x="30" y="24" width="1140" height="512" fill="#0f2419" stroke="#9fbf7f" stroke-width="4"/>
+  <rect x="30" y="24" width="1140" height="38" fill="#9fbf7f"/>
+  <text x="48" y="51" font-family="VT323, monospace" font-size="26" fill="#163e2e">aykiri_gozlem_analiz.py — veri_ön_işleme</text>
+  <rect x="1094" y="32" width="22" height="22" fill="#eef0d6" stroke="#163e2e" stroke-width="2"/>
+  <rect x="1126" y="32" width="22" height="22" fill="#b5523b" stroke="#163e2e" stroke-width="2"/>
+
+  <!-- code pane -->
+  <rect x="46" y="78" width="560" height="442" fill="#163e2e"/>
+  <rect x="46" y="78" width="44" height="442" fill="#1d3324"/>
+  <g font-family="VT323, monospace" font-size="22">
+    <g fill="#9fbf7f" text-anchor="end">
+      <text x="80" y="110">1</text><text x="80" y="138">2</text><text x="80" y="166">3</text><text x="80" y="194">4</text>
+      <text x="80" y="222">5</text><text x="80" y="250">6</text><text x="80" y="278">7</text><text x="80" y="306">8</text>
+      <text x="80" y="334">9</text><text x="80" y="362">10</text><text x="80" y="390">11</text><text x="80" y="418">12</text>
+    </g>
+    <text x="104" y="110" fill="#9fbf7f"># Aykırı değer yakalamak</text>
+    <text x="104" y="138" fill="#eef0d6">Q1 = df_table.quantile(<tspan fill="#c9a45c">0.25</tspan>)</text>
+    <text x="104" y="166" fill="#eef0d6">Q3 = df_table.quantile(<tspan fill="#c9a45c">0.75</tspan>)</text>
+    <text x="104" y="194" fill="#eef0d6">IQR = Q3 - Q1</text>
+    <text x="104" y="250" fill="#eef0d6">alt_sinir = Q1 - <tspan fill="#c9a45c">1.5</tspan> * IQR</text>
+    <text x="104" y="278" fill="#eef0d6">ust_sinir = Q3 + <tspan fill="#c9a45c">1.5</tspan> * IQR</text>
+    <text x="104" y="334" fill="#9fbf7f"># Baskılama</text>
+    <text x="104" y="362" fill="#eef0d6">s = df[<tspan fill="#8ccf88">"table"</tspan>].copy()</text>
+    <text x="104" y="390" fill="#eef0d6">s[s &lt; alt_sinir] = alt_sinir</text>
+    <text x="104" y="418" fill="#eef0d6">s[s &gt; ust_sinir] = ust_sinir</text>
+  </g>
+  <!-- terminal -->
+  <rect x="46" y="440" width="560" height="80" fill="#0f2419" stroke="#244b37" stroke-width="2"/>
+  <text x="60" y="468" font-family="VT323, monospace" font-size="22" fill="#8ccf88">&gt; python aykiri_gozlem_analiz.py</text>
+  <text x="60" y="498" font-family="VT323, monospace" font-size="22" fill="#eef0d6">Alt Sınır: 51.50 | Üst Sınır: 63.50 <tspan fill="#c9a45c">(örnek)</tspan></text>
+
+  <!-- plot pane -->
+  <rect x="626" y="78" width="528" height="442" fill="#163e2e"/>
+  <text x="650" y="114" font-family="VT323, monospace" font-size="28" fill="#fffce9">table Değişkeni Boxplot</text>
+  <rect x="1040" y="94" width="100" height="26" fill="#c9a45c"/>
+  <text x="1090" y="113" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#163e2e">örnek veri</text>
+
+  <!-- axis -->
+  <line x1="660" y1="400" x2="1120" y2="400" stroke="#9fbf7f" stroke-width="2"/>
+  <g stroke="#9fbf7f" stroke-width="2">
+    <line x1="680" y1="400" x2="680" y2="408"/><line x1="770" y1="400" x2="770" y2="408"/>
+    <line x1="860" y1="400" x2="860" y2="408"/><line x1="950" y1="400" x2="950" y2="408"/>
+    <line x1="1040" y1="400" x2="1040" y2="408"/>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f" text-anchor="middle">
+    <text x="680" y="426">45</text><text x="770" y="426">50</text><text x="860" y="426">55</text>
+    <text x="950" y="426">60</text><text x="1040" y="426">65</text>
+  </g>
+  <text x="890" y="452" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">table</text>
+
+  <!-- fences -->
+  <g stroke="#b5523b" stroke-width="2" stroke-dasharray="6 5">
+    <line x1="788" y1="150" x2="788" y2="390"/>
+    <line x1="1004" y1="150" x2="1004" y2="390"/>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#b5523b">
+    <text x="782" y="166" text-anchor="end">alt sınır</text>
+    <text x="1010" y="166">üst sınır</text>
+  </g>
+
+  <!-- box -->
+  <line x1="806" y1="270" x2="860" y2="270" stroke="#eef0d6" stroke-width="3"/>
+  <line x1="806" y1="248" x2="806" y2="292" stroke="#eef0d6" stroke-width="3"/>
+  <rect x="860" y="230" width="72" height="80" fill="#244b37" stroke="#8ccf88" stroke-width="3"/>
+  <line x1="896" y1="230" x2="896" y2="310" stroke="#c9a45c" stroke-width="4"/>
+  <line x1="932" y1="270" x2="986" y2="270" stroke="#eef0d6" stroke-width="3"/>
+  <line x1="986" y1="248" x2="986" y2="292" stroke="#eef0d6" stroke-width="3"/>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f" text-anchor="middle">
+    <text x="860" y="338">Q1</text><text x="896" y="216">medyan</text><text x="932" y="338">Q3</text>
+  </g>
+  <!-- outliers -->
+  <g fill="#b5523b">
+    <rect x="700" y="265" width="10" height="10"/><rect x="740" y="265" width="10" height="10"/>
+    <rect x="1030" y="265" width="10" height="10"/><rect x="1062" y="265" width="10" height="10"/>
+    <rect x="1096" y="265" width="10" height="10"/>
+  </g>
+  <text x="890" y="370" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#eef0d6">kırmızı kareler: sınır dışı gözlemler</text>
+  <rect x="30" y="24" width="1140" height="512" fill="url(#scan)"/>
+</svg>

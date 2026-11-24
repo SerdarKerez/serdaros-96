@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#244b37" stroke-width="1"/>
+    </pattern>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#c9a45c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#1d3324"/>
+  <rect width="1200" height="560" fill="url(#grid)" opacity="0.5"/>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="40" fill="#fffce9">DFD: DATA PREPARATION</text>
+  <text x="42" y="88" font-family="Tahoma, Verdana, sans-serif" font-size="17" fill="#9fbf7f">In systems analysis notation: process = transformation, data store = table</text>
+
+  <!-- external entity: analyst -->
+  <rect x="40" y="220" width="150" height="80" fill="#eef0d6" stroke="#163e2e" stroke-width="3"/>
+  <text x="115" y="255" text-anchor="middle" font-family="VT323, monospace" font-size="28" fill="#163e2e">ANALYST</text>
+  <text x="115" y="280" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#244b37">external entity</text>
+
+  <!-- D1 raw store -->
+  <g>
+    <rect x="250" y="130" width="220" height="50" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+    <rect x="250" y="130" width="44" height="50" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="272" y="162" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#8ccf88">D1</text>
+    <text x="382" y="161" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#eef0d6">Raw dataset</text>
+  </g>
+
+  <!-- processes -->
+  <g font-family="Tahoma, Verdana, sans-serif">
+    <rect x="270" y="320" width="180" height="120" rx="20" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+    <line x1="270" y1="356" x2="450" y2="356" stroke="#c9a45c" stroke-width="2"/>
+    <text x="360" y="345" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#c9a45c">1.0</text>
+    <text x="360" y="388" text-anchor="middle" font-size="15" fill="#eef0d6">Fill missing</text>
+    <text x="360" y="410" text-anchor="middle" font-size="15" fill="#eef0d6">values</text>
+
+    <rect x="530" y="320" width="180" height="120" rx="20" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+    <line x1="530" y1="356" x2="710" y2="356" stroke="#c9a45c" stroke-width="2"/>
+    <text x="620" y="345" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#c9a45c">2.0</text>
+    <text x="620" y="388" text-anchor="middle" font-size="15" fill="#eef0d6">Handle</text>
+    <text x="620" y="410" text-anchor="middle" font-size="15" fill="#eef0d6">outliers</text>
+
+    <rect x="790" y="320" width="180" height="120" rx="20" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+    <line x1="790" y1="356" x2="970" y2="356" stroke="#c9a45c" stroke-width="2"/>
+    <text x="880" y="345" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#c9a45c">3.0</text>
+    <text x="880" y="388" text-anchor="middle" font-size="15" fill="#eef0d6">Scale and</text>
+    <text x="880" y="410" text-anchor="middle" font-size="15" fill="#eef0d6">encode</text>
+  </g>
+
+  <!-- D2 clean store -->
+  <g>
+    <rect x="930" y="130" width="230" height="50" fill="#163e2e" stroke="#8ccf88" stroke-width="3"/>
+    <rect x="930" y="130" width="44" height="50" fill="#244b37" stroke="#8ccf88" stroke-width="3"/>
+    <text x="952" y="162" text-anchor="middle" font-family="VT323, monospace" font-size="24" fill="#8ccf88">D2</text>
+    <text x="1067" y="161" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#eef0d6">Model-ready data</text>
+  </g>
+
+  <!-- flows -->
+  <g stroke="#c9a45c" stroke-width="3" fill="none" marker-end="url(#ar)">
+    <path d="M190 245H250V184"/>
+    <path d="M360 182V316"/>
+    <path d="M452 380H526"/>
+    <path d="M712 380H786"/>
+    <path d="M972 380H1045V184"/>
+    <path d="M1160 155H1180V500H115V304"/>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">
+    <text x="200" y="236">dataset</text>
+    <text x="370" y="250">raw records</text>
+    <text x="458" y="364">full data</text>
+    <text x="716" y="364">clean data</text>
+    <text x="1053" y="250">features</text>
+    <text x="560" y="492">summary, charts and report</text>
+  </g>
+
+  <!-- legend -->
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#eef0d6">
+    <rect x="520" y="130" width="360" height="120" fill="#0f2419" stroke="#244b37" stroke-width="2"/>
+    <text x="536" y="154" font-family="VT323, monospace" font-size="22" fill="#fffce9">LEGEND</text>
+    <rect x="536" y="166" width="22" height="16" fill="#eef0d6"/><text x="568" y="179">external entity</text>
+    <rect x="536" y="192" width="22" height="16" rx="5" fill="none" stroke="#c9a45c" stroke-width="2"/><text x="568" y="205">process (Python script)</text>
+    <rect x="536" y="218" width="22" height="16" fill="none" stroke="#8ccf88" stroke-width="2"/><text x="568" y="231">data store (DataFrame / table)</text>
+  </g>
+</svg>

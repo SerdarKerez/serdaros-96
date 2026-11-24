@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="t">
+  <title id="t">The seven levers of progressive overload</title>
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1000" height="560" fill="#1d3324"/>
+  <text x="40" y="56" font-family="VT323, monospace" font-size="40" fill="#8ccf88">7 LEVERS OF OVERLOAD</text>
+  <!-- bağlantılar -->
+  <g stroke="#9fbf7f" stroke-width="3" stroke-dasharray="6 6">
+    <line x1="500" y1="300" x2="180" y2="150"/>
+    <line x1="500" y1="300" x2="500" y2="140"/>
+    <line x1="500" y1="300" x2="820" y2="150"/>
+    <line x1="500" y1="300" x2="160" y2="330"/>
+    <line x1="500" y1="300" x2="840" y2="330"/>
+    <line x1="500" y1="300" x2="300" y2="480"/>
+    <line x1="500" y1="300" x2="700" y2="480"/>
+  </g>
+  <!-- merkez -->
+  <rect x="370" y="256" width="260" height="88" fill="#c9a45c" stroke="#0f2419" stroke-width="4"/>
+  <text x="500" y="298" text-anchor="middle" font-family="VT323, monospace" font-size="34" fill="#163e2e">PROGRESSIVE</text>
+  <text x="500" y="328" text-anchor="middle" font-family="VT323, monospace" font-size="34" fill="#163e2e">OVERLOAD</text>
+  <!-- kollar -->
+  <g font-family="Tahoma, Verdana, sans-serif" text-anchor="middle">
+    <g transform="translate(180,150)">
+      <rect x="-100" y="-40" width="200" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="30" fill="#163e2e">LOAD</text>
+      <text y="20" font-size="14" fill="#244b37">+kg at same reps</text>
+    </g>
+    <g transform="translate(500,140)">
+      <rect x="-100" y="-40" width="200" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="30" fill="#163e2e">REPS</text>
+      <text y="20" font-size="14" fill="#244b37">+reps at same kg</text>
+    </g>
+    <g transform="translate(820,150)">
+      <rect x="-100" y="-40" width="200" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="24" fill="#163e2e">SETS / VOLUME</text>
+      <text y="20" font-size="14" fill="#244b37">+sets per muscle</text>
+    </g>
+    <g transform="translate(160,330)">
+      <rect x="-100" y="-40" width="200" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="30" fill="#163e2e">TEMPO</text>
+      <text y="20" font-size="14" fill="#244b37">controlled eccentric</text>
+    </g>
+    <g transform="translate(840,330)">
+      <rect x="-100" y="-40" width="200" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="30" fill="#163e2e">FREQUENCY</text>
+      <text y="20" font-size="14" fill="#244b37">2× / week per muscle</text>
+    </g>
+    <g transform="translate(290,480)">
+      <rect x="-130" y="-40" width="260" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="24" fill="#163e2e">RANGE OF MOTION</text>
+      <text y="20" font-size="14" fill="#244b37">deeper, full ROM</text>
+    </g>
+    <g transform="translate(700,480)">
+      <rect x="-110" y="-40" width="220" height="80" fill="#eef0d6" stroke="#0f2419" stroke-width="3"/>
+      <text y="-8" font-family="VT323, monospace" font-size="30" fill="#163e2e">REST</text>
+      <text y="20" font-size="14" fill="#244b37">same work, shorter rest</text>
+    </g>
+  </g>
+  <rect width="1000" height="560" fill="url(#scan)"/>
+</svg>

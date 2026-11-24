@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs><pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity="0.18"/></pattern></defs>
+<rect width="1200" height="630" fill="#163e2e"/>
+<rect x="30" y="30" width="1140" height="570" fill="#1d3324" stroke="#9fbf7f" stroke-width="4"/>
+<rect x="30" y="30" width="1140" height="40" fill="#9fbf7f"/>
+<text x="50" y="60" font-family="VT323, monospace" font-size="26" fill="#163e2e">C:\PROJECTS\GENOMIC-CRM.EXE</text>
+<rect x="1080" y="40" width="20" height="20" fill="#163e2e"/><rect x="1110" y="40" width="20" height="20" fill="#163e2e"/><rect x="1140" y="40" width="20" height="20" fill="#b5523b"/>
+<text x="80" y="170" font-family="VT323, monospace" font-size="96" fill="#fffce9">GENOMIC CRM</text>
+<text x="84" y="218" font-family="VT323, monospace" font-size="26" fill="#c9a45c">raw DNA + customer relations, one data model</text>
+<rect x="80" y="250" width="110" height="34" fill="#b5523b"/>
+<text x="135" y="274" font-family="VT323, monospace" font-size="26" fill="#fffce9" text-anchor="middle">CONCEPT</text>
+<!-- helix -->
+<g stroke-width="6">
+<line x1="830" y1="120" x2="930" y2="120" stroke="#8ccf88"/><line x1="815" y1="165" x2="945" y2="165" stroke="#c9a45c"/>
+<line x1="830" y1="210" x2="930" y2="210" stroke="#8ccf88"/><line x1="860" y1="255" x2="900" y2="255" stroke="#c9a45c"/>
+<line x1="830" y1="300" x2="930" y2="300" stroke="#8ccf88"/><line x1="815" y1="345" x2="945" y2="345" stroke="#c9a45c"/>
+<line x1="830" y1="390" x2="930" y2="390" stroke="#8ccf88"/><line x1="860" y1="435" x2="900" y2="435" stroke="#c9a45c"/>
+</g>
+<path d="M830 100 C 780 160, 980 220, 930 280 S 780 400, 830 460" fill="none" stroke="#fffce9" stroke-width="8"/>
+<path d="M930 100 C 980 160, 780 220, 830 280 S 980 400, 930 460" fill="none" stroke="#9fbf7f" stroke-width="8"/>
+<!-- customer card -->
+<rect x="86" y="326" width="340" height="220" fill="#0f2a1f"/>
+<rect x="80" y="320" width="340" height="220" fill="#244b37" stroke="#9fbf7f" stroke-width="4"/>
+<rect x="80" y="320" width="340" height="36" fill="#9fbf7f"/>
+<text x="96" y="346" font-family="VT323, monospace" font-size="26" fill="#163e2e">CUSTOMER CARD</text>
+<rect x="100" y="376" width="56" height="56" fill="#1d3324" stroke="#c9a45c" stroke-width="3"/>
+<rect x="118" y="388" width="20" height="20" fill="#c9a45c"/><rect x="110" y="412" width="36" height="14" fill="#c9a45c"/>
+<text x="172" y="398" font-family="Tahoma, Verdana, sans-serif" font-size="17" fill="#fffce9">Sample Customer</text>
+<text x="172" y="422" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#9fbf7f">sample_id: S-0000</text>
+<rect x="100" y="452" width="16" height="16" fill="#8ccf88"/><text x="126" y="466" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">Consent: processing</text>
+<rect x="100" y="482" width="16" height="16" fill="#8ccf88"/><text x="126" y="496" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">File: QC passed</text>
+<rect x="100" y="512" width="16" height="16" fill="#1d3324" stroke="#c9a45c" stroke-width="2"/><text x="126" y="526" font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">Report: draft</text>
+<!-- pipeline chips -->
+<g font-family="VT323, monospace" font-size="24" text-anchor="middle">
+<rect x="470" y="360" width="130" height="44" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><text x="535" y="390" fill="#eef0d6">UPLOAD</text>
+<rect x="470" y="420" width="130" height="44" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><text x="535" y="450" fill="#eef0d6">QC</text>
+<rect x="470" y="480" width="130" height="44" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><text x="535" y="510" fill="#eef0d6">ANNOTATE</text>
+<rect x="630" y="420" width="130" height="44" fill="#c9a45c"/><text x="695" y="450" fill="#163e2e">REPORT</text>
+</g>
+<path d="M600 382 L615 382 L615 442 L630 442 M600 442 L630 442 M600 502 L615 502 L615 442" fill="none" stroke="#c9a45c" stroke-width="3"/>
+<!-- lock -->
+<rect x="1000" y="440" width="90" height="70" fill="#c9a45c"/>
+<path d="M1018 440 L1018 412 Q1045 380 1072 412 L1072 440" fill="none" stroke="#c9a45c" stroke-width="10"/>
+<rect x="1040" y="460" width="10" height="28" fill="#163e2e"/>
+<text x="1045" y="545" font-family="VT323, monospace" font-size="24" fill="#9fbf7f" text-anchor="middle">KVKK / GDPR</text>
+<text x="1150" y="585" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f" text-anchor="end">Not for diagnosis · fictional example</text>
+<rect width="1200" height="630" fill="url(#sl)"/>
+</svg>

@@ -1,0 +1,120 @@
+/* SerdarOS 96 — calculator, games and desktop cat. Owner: builder-games. */
+
+/* ---------- Calculator ---------- */
+.calc{scrollbar-color:#95ab7a #dce4cb;background:linear-gradient(135deg,#e4e9d6,#c3cfb1);height:100%;overflow:auto;color:#243a29}
+.calc__panel{display:flex;flex-direction:column;gap:10px;width:100%;max-width:580px;min-height:100%;margin:0 auto;padding:12px;box-sizing:border-box}
+.calc__brand{display:flex;flex:none;justify-content:space-between;align-items:center;gap:8px;color:#4b6442;letter-spacing:1px;font:18px/1 VT323,monospace}
+.calc__brand>span>span{color:#778969}
+.calc__edition{letter-spacing:1px;font:9px Tahoma,Verdana,sans-serif}
+.calc__screen{flex:none;color:#263f2c;text-align:right;background:linear-gradient(#becda0,#e0e6bf);border:1px solid #738267;border-radius:3px;padding:8px 12px;box-shadow:inset 2px 2px 5px #46553838,0 1px #f6f5df}
+.calc__expression{display:block;overflow-wrap:anywhere;color:#4b6140;min-height:18px;font:11px/18px "Courier New",monospace}
+.calc__display{display:block;overflow-wrap:anywhere;font:40px/1.15 VT323,monospace;font-variant-numeric:tabular-nums}
+.calc__display--long{font-size:32px}
+.calc__display--error{font-size:26px;color:#7a3f33}
+.calc__keys{flex:1;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(6,minmax(32px,1fr));gap:6px}
+.calc__key{color:#2c452f;cursor:pointer;touch-action:manipulation;background:linear-gradient(#fffef0,#e8edd6 49%,#d8e0c3 50%,#eff0dc);border:1px solid #8b9d79;border-radius:4px;min-width:0;min-height:32px;padding:2px 6px;font:24px/1 VT323,monospace;box-shadow:inset 1px 1px #fffff5,inset -1px -1px #b4c19a,0 2px #82916f}
+.calc__key--utility{background:linear-gradient(#dde6ce,#bdcda7);font-size:21px}
+.calc__key--clear{color:#68452f;background:linear-gradient(#f3dfc7,#d6b997);border-color:#a79171;box-shadow:inset 1px 1px #fff0db,inset -1px -1px #baa17e,0 2px #928366}
+.calc__key--operator{background:linear-gradient(#c6d7a6,#a3ba82);border-color:#7a935f;font-size:28px}
+.calc__key--equals{grid-column:1/-1;color:#fffbe2;background:linear-gradient(#88a96d,#60824c 49%,#3b633b 50%,#557b45);border-color:#3b613c;font-size:28px;box-shadow:inset 1px 1px #b4ca94,inset -1px -1px #345831,0 2px #3a5431}
+.calc__key:hover{filter:brightness(1.06)}
+.calc__key:focus-visible{outline:2px dotted #274d37;outline-offset:1px}
+.calc__key:active,.calc__key--hit,.calc__key[aria-pressed=true]{transform:translateY(1px);box-shadow:inset 1px 2px 4px #29472d50}
+.calc__key[aria-pressed=true]{color:#fffbe2;background:#6e8d55}
+.calc__hint{flex:none;margin:0;color:#586d49;text-align:center;font-size:9px}
+@media (pointer:coarse){.calc__keys{grid-template-rows:repeat(6,minmax(44px,1fr))}}
+
+/* ---------- Game shell (shared) ---------- */
+.gm{display:flex;flex-direction:column;height:100%;overflow:auto;color:#304b35;background:#e9eed9;scrollbar-color:#95ab7a #dce4cb;font:11px/1.5 Tahoma,Verdana,sans-serif}
+.gm__toolbar{flex:none;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 14px;background:linear-gradient(#f7f8e9,#d4dfbd);border-bottom:1px solid #a3b48d}
+.gm__toolbar>span:first-child{letter-spacing:1px;font:24px/1 VT323,monospace}
+.gm__toolbar small{color:#7c9765;font:inherit}
+.gm__level{color:#70815c;letter-spacing:.6px;font-size:8px}
+.gm__btn,.mines__modes button{color:#304a31;cursor:pointer;touch-action:manipulation;background:linear-gradient(#fbfcea,#d4e1bc);border:1px solid #7e966b;border-radius:3px;min-height:30px;padding:5px 12px;font:11px Tahoma,Verdana,sans-serif;box-shadow:inset 1px 1px #fffef2,inset -1px -1px #b6c69d}
+.gm__btn:hover:not(:disabled){filter:brightness(1.05)}
+.gm__btn:active:not(:disabled){box-shadow:inset 1px 2px 3px #39573340}
+.gm__btn:focus-visible,.mines__modes button:focus-visible,.mines__reset:focus-visible{outline:2px dotted #274d37;outline-offset:1px}
+.gm__content{width:100%;max-width:460px;margin:0 auto;padding:12px 16px;box-sizing:border-box}
+.gm__score{display:flex;justify-content:space-between;gap:8px;margin-bottom:8px;font:19px VT323,monospace}
+.gm__score strong{margin-left:7px;font-weight:400}
+.gm__score>span:last-child{color:#7c9068}
+.gm__board{position:relative;margin:0 auto;border:4px ridge #9bb383;box-sizing:border-box}
+.gm__board canvas{display:block;width:100%;height:100%;touch-action:none;image-rendering:pixelated}
+.gm__message{text-align:center;background:#f7f6e5;border:1px solid #b6c6a0;margin-top:10px;padding:9px 12px}
+.gm__message h3{margin:0 0 3px;font:23px VT323,monospace;font-weight:400}
+.gm__message p{color:#697f58;margin:0;font-size:10px;line-height:1.5}
+.gm__message button{margin-top:8px}
+.gm__keys{color:#6c815a;text-align:center;margin:8px 0 10px;font-size:10px}
+.gm__footer{flex:none;margin-top:auto;padding:6px 10px;color:#6d8259;text-align:center;background:#dee7ca;border-top:1px solid #acbd96;font-size:9px}
+
+/* Snake */
+.gm__board--snake{aspect-ratio:1;width:100%;max-width:280px;background-color:#d9e1b7;background-image:linear-gradient(#7f9a6120 1px,#0000 1px),linear-gradient(90deg,#7f9a6120 1px,#0000 1px);background-size:calc(100%/14) calc(100%/14)}
+.gm__controls{display:grid;grid-template-columns:repeat(3,44px);grid-template-rows:repeat(2,32px);justify-content:center;gap:3px;margin-top:10px}
+.gm__controls .gm__btn{padding:0;font:16px Tahoma,sans-serif}
+.gm__up{grid-column:2}
+.gm__left{grid-area:2/1}
+.gm__down{grid-area:2/2}
+.gm__right{grid-area:2/3}
+@media (pointer:coarse){.gm__controls{grid-template-rows:repeat(2,44px);grid-template-columns:repeat(3,56px)}}
+
+/* Minesweeper */
+.gm__content--mines{max-width:320px;padding:10px 12px 8px}
+.mines__dash{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 10px;background:#d6e0c2;border:3px ridge #abbc95}
+.mines__counter{display:grid;gap:3px;text-align:center}
+.mines__counter>span{color:#5d7550;letter-spacing:1px;font-size:8px}
+.mines__counter output{min-width:63px;padding:0 6px;color:#d9e9a3;letter-spacing:2px;background:#243e2b;border:2px inset #b5c39b;font:35px/1.05 VT323,monospace;font-variant-numeric:tabular-nums}
+.mines__reset{display:grid;place-items:center;cursor:pointer;padding:3px 6px;background:linear-gradient(#f6f8e1,#c7d6ae);border:2px outset #d2ddba;border-radius:3px}
+.mines__reset svg{width:36px;height:36px;display:block}
+.mines__reset:active{border-style:inset}
+.mines__modes{display:flex;align-items:center;gap:4px;margin:8px 0 7px}
+.mines__modes button{display:flex;align-items:center;gap:4px;min-height:29px;padding:4px 10px;font-size:10px;background:#f5f7e6;border-color:#9baf85;box-shadow:none}
+.mines__modes button[aria-pressed=true]{color:#fff7db;background:#466742;border-color:#2f4c32;box-shadow:inset 1px 1px 2px #23412950}
+.mines__modes svg{width:15px;height:15px}
+.mines__modes>span{margin-left:auto;color:#657d54;font-size:9px}
+.mines__board{user-select:none;-webkit-user-select:none;background:#879d75;border:3px inset #a5b88d;width:100%;box-sizing:border-box;touch-action:manipulation}
+.mines__row{display:grid;grid-template-columns:repeat(9,minmax(0,1fr))}
+.mines__cell{aspect-ratio:1;display:grid;place-items:center;width:100%;min-width:0;padding:0;cursor:pointer;color:#314e3c;background:#b7ca98;border:2px outset #cfddaf;border-radius:0;font:700 26px/1 VT323,monospace;-webkit-touch-callout:none}
+.mines__cell:hover:not(.mines__cell--open){background:#c7d8a9}
+.mines__cell:active:not(.mines__cell--open){border-style:inset}
+.mines__cell--open{background:#e6ebd2;border:1px solid #bdc9a7;cursor:default}
+.mines__cell--hit{background:#d7a59b;border-color:#a8746e}
+.mines__cell--wrong{background:#e2c7b8}
+.mines__cell>svg{pointer-events:none;width:72%;height:72%}
+.mines__cell:focus-visible{position:relative;z-index:1;outline:2px solid #274d37;outline-offset:-3px}
+.mines__cell[data-number="1"]{color:#315980}
+.mines__cell[data-number="2"]{color:#426b36}
+.mines__cell[data-number="3"]{color:#9d4d4d}
+.mines__cell[data-number="4"]{color:#755082}
+.mines__cell[data-number="5"]{color:#855737}
+.mines__cell[data-number="6"]{color:#317471}
+.mines__cell[data-number="7"]{color:#39453b}
+.mines__cell[data-number="8"]{color:#6e7563}
+.mines__message{min-height:22px;margin:8px 0 4px;text-align:center;font:20px/1.1 VT323,monospace}
+.mines__message--won{color:#3b723b}
+.mines__message--lost{color:#975a52}
+
+/* Stack */
+.gm--stack .gm__content{max-width:390px;padding:10px 16px}
+.gm__board--stack{aspect-ratio:320/350;width:100%;max-width:260px;background:linear-gradient(#e7ecd0,#d5ddb5);border-width:3px;cursor:pointer;user-select:none;-webkit-user-select:none}
+.stack__message{min-height:38px;margin:9px 0 6px;color:#637b52;text-align:center;font:19px/1.1 VT323,monospace}
+.stack__message--perfect{color:#355e39}
+.stack__message--lost{color:#975a52}
+.gm__btn.stack__drop{display:block;width:100%;min-height:36px;background:linear-gradient(#e5edce,#bed1a1);border-color:#59764a}
+
+@container (width<=340px){
+  .gm__content,.gm--stack .gm__content{padding:10px}
+  .gm__level{display:none}
+}
+
+/* ---------- Desktop cat (Kömür) ---------- */
+.scat{position:fixed;left:0;right:0;bottom:48px;height:0;z-index:2;pointer-events:none}
+.scat[hidden]{display:none}
+.scat__cat{position:absolute;left:0;bottom:0;width:72px;height:44px;padding:0;margin:0;background:none;border:0;cursor:pointer;pointer-events:auto;touch-action:manipulation;will-change:transform}
+.scat__cat:focus-visible{outline:2px dashed #e8ebba;outline-offset:3px}
+.scat__sprite{position:absolute;inset:0;display:block;filter:drop-shadow(0 0 1px #e8ebba80)}
+.scat__sprite svg{display:block;width:72px;height:44px}
+.scat__sprite[data-dir=left]{transform:scaleX(-1)}
+.scat__shadow{position:absolute;left:12px;bottom:-2px;width:48px;height:3px;border-radius:50%;background:#07140a40}
+.scat__name{position:absolute;bottom:calc(100% + 4px);left:50%;transform:translateX(-50%);padding:1px 7px;white-space:nowrap;color:#f4f0d6;background:#294b34ed;border:1px solid #91a678;border-radius:3px;font:14px VT323,monospace;opacity:0;pointer-events:none;transition:opacity .15s}
+.scat__cat:hover .scat__name,.scat__cat:focus-visible .scat__name{opacity:1}
+@media (prefers-reduced-motion:reduce){.scat__name{transition:none}}

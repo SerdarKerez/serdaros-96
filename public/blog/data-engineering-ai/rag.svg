@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" shape-rendering="crispEdges">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#c9a45c"/>
+    </marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#8ccf88"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#1d3324"/>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="42" fill="#fffce9">RAG BORU HATTI</text>
+
+  <!-- indexing lane -->
+  <rect x="30" y="80" width="1140" height="190" fill="#163e2e" stroke="#244b37" stroke-width="3"/>
+  <text x="50" y="110" font-family="VT323, monospace" font-size="26" fill="#c9a45c">1) İNDEKSLEME (offline)</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="15" text-anchor="middle">
+    <rect x="50" y="135" width="150" height="100" fill="#eef0d6"/>
+    <rect x="70" y="150" width="80" height="8" fill="#9fbf7f"/><rect x="70" y="166" width="110" height="8" fill="#9fbf7f"/><rect x="70" y="182" width="95" height="8" fill="#9fbf7f"/>
+    <text x="125" y="220" fill="#163e2e">Belgeler</text>
+
+    <rect x="260" y="135" width="150" height="100" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="335" y="180" fill="#fffce9">Temizlik</text><text x="335" y="204" fill="#9fbf7f">metin + metadata</text>
+
+    <rect x="470" y="135" width="150" height="100" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <rect x="490" y="150" width="50" height="22" fill="#c9a45c"/><rect x="550" y="150" width="50" height="22" fill="#c9a45c"/>
+    <rect x="490" y="178" width="50" height="22" fill="#c9a45c"/><rect x="550" y="178" width="50" height="22" fill="#c9a45c"/>
+    <text x="545" y="224" fill="#fffce9">Chunking</text>
+
+    <rect x="680" y="135" width="150" height="100" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="755" y="180" font-family="VT323, monospace" font-size="18" fill="#8ccf88">[0.12, -0.4, …]</text>
+    <text x="755" y="214" fill="#fffce9">Embedding</text>
+
+    <rect x="890" y="135" width="260" height="100" fill="#244b37" stroke="#c9a45c" stroke-width="4"/>
+    <g fill="#8ccf88">
+      <rect x="910" y="152" width="10" height="10"/><rect x="934" y="168" width="10" height="10"/><rect x="958" y="150" width="10" height="10"/>
+      <rect x="922" y="186" width="10" height="10"/><rect x="976" y="180" width="10" height="10"/><rect x="950" y="200" width="10" height="10"/>
+    </g>
+    <text x="1070" y="180" fill="#fffce9">Vector</text><text x="1070" y="204" fill="#fffce9">store</text>
+  </g>
+  <g stroke="#c9a45c" stroke-width="3" fill="none" marker-end="url(#a1)">
+    <path d="M200 185H255"/><path d="M410 185H465"/><path d="M620 185H675"/><path d="M830 185H885"/>
+  </g>
+
+  <!-- query lane -->
+  <rect x="30" y="290" width="1140" height="190" fill="#163e2e" stroke="#244b37" stroke-width="3"/>
+  <text x="50" y="320" font-family="VT323, monospace" font-size="26" fill="#8ccf88">2) SORGU (online)</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="15" text-anchor="middle">
+    <rect x="50" y="345" width="150" height="100" fill="#eef0d6"/>
+    <text x="125" y="390" fill="#163e2e">Kullanıcı</text><text x="125" y="414" fill="#163e2e">sorusu</text>
+
+    <rect x="260" y="345" width="150" height="100" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="335" y="390" fill="#fffce9">Soru</text><text x="335" y="414" fill="#fffce9">embedding</text>
+
+    <rect x="470" y="345" width="360" height="100" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="650" y="384" fill="#fffce9">Arama + filtre (hibrit, yetki)</text>
+    <text x="650" y="410" fill="#9fbf7f">en alakalı k parça</text>
+
+    <rect x="890" y="345" width="260" height="100" fill="#244b37" stroke="#8ccf88" stroke-width="4"/>
+    <text x="1020" y="388" font-family="VT323, monospace" font-size="30" fill="#fffce9">LLM</text>
+    <text x="1020" y="418" fill="#9fbf7f">soru + bağlam → cevap</text>
+  </g>
+  <g stroke="#8ccf88" stroke-width="3" fill="none" marker-end="url(#a2)">
+    <path d="M200 395H255"/><path d="M410 395H465"/><path d="M830 395H885"/>
+    <path d="M1020 235V275H650V340"/>
+  </g>
+
+  <!-- eval bar -->
+  <rect x="30" y="500" width="1140" height="40" fill="#b5523b"/>
+  <text x="50" y="527" font-family="VT323, monospace" font-size="24" fill="#fffce9">DEĞERLENDİRME:</text>
+  <text x="270" y="526" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#fffce9">retrieval isabeti · cevabın kaynağa dayanması · test soru seti · model değişince yeniden indeksleme</text>
+</svg>

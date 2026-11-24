@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620">
+  <rect width="1000" height="620" fill="#163e2e"/>
+  <g fill="#244b37" opacity="0.6">
+    <rect x="0" y="0" width="1000" height="4"/><rect x="0" y="616" width="1000" height="4"/>
+  </g>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="42" fill="#fffce9">VERİ MODELİ</text>
+  <text x="960" y="58" text-anchor="end" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">1 ──&lt; N : bire-çok ilişki</text>
+
+  <!-- relations (drawn first) -->
+  <g stroke="#c9a45c" stroke-width="3" fill="none">
+    <path d="M270 160 H400"/>
+    <path d="M590 160 H720"/>
+    <path d="M150 230 V390"/>
+    <path d="M270 450 H400"/>
+    <path d="M495 250 V390"/>
+  </g>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#c9a45c" text-anchor="middle">
+    <text x="284" y="152">1</text><text x="386" y="152">N</text>
+    <text x="604" y="152">1</text><text x="706" y="152">N</text>
+    <text x="162" y="248">1</text><text x="162" y="384">N</text>
+    <text x="284" y="442">1</text><text x="386" y="442">N</text>
+    <text x="507" y="268">1</text><text x="507" y="384">N</text>
+  </g>
+
+  <!-- Surveys -->
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14">
+    <rect x="30" y="96" width="240" height="134" fill="#1d3324" stroke="#8ccf88" stroke-width="3"/>
+    <rect x="30" y="96" width="240" height="30" fill="#8ccf88"/>
+    <text x="44" y="118" font-family="VT323, monospace" font-size="24" fill="#163e2e">Surveys</text>
+    <text x="44" y="148" fill="#c9a45c">PK SurveyId</text>
+    <text x="44" y="168" fill="#eef0d6">OwnerId, Title</text>
+    <text x="44" y="188" fill="#eef0d6">ShareCode, IsOpen</text>
+    <text x="44" y="208" fill="#eef0d6">CreatedAt</text>
+
+    <!-- Questions -->
+    <rect x="400" y="96" width="190" height="154" fill="#1d3324" stroke="#8ccf88" stroke-width="3"/>
+    <rect x="400" y="96" width="190" height="30" fill="#8ccf88"/>
+    <text x="414" y="118" font-family="VT323, monospace" font-size="24" fill="#163e2e">Questions</text>
+    <text x="414" y="148" fill="#c9a45c">PK QuestionId</text>
+    <text x="414" y="168" fill="#9fbf7f">FK SurveyId</text>
+    <text x="414" y="188" fill="#eef0d6">Text, QType</text>
+    <text x="414" y="208" fill="#eef0d6">SortOrder</text>
+    <text x="414" y="228" fill="#eef0d6">IsRequired</text>
+
+    <!-- Options -->
+    <rect x="720" y="96" width="250" height="134" fill="#1d3324" stroke="#8ccf88" stroke-width="3"/>
+    <rect x="720" y="96" width="250" height="30" fill="#8ccf88"/>
+    <text x="734" y="118" font-family="VT323, monospace" font-size="24" fill="#163e2e">Options</text>
+    <text x="734" y="148" fill="#c9a45c">PK OptionId</text>
+    <text x="734" y="168" fill="#9fbf7f">FK QuestionId</text>
+    <text x="734" y="188" fill="#eef0d6">Text, SortOrder</text>
+
+    <!-- Responses -->
+    <rect x="30" y="390" width="240" height="114" fill="#1d3324" stroke="#8ccf88" stroke-width="3"/>
+    <rect x="30" y="390" width="240" height="30" fill="#8ccf88"/>
+    <text x="44" y="412" font-family="VT323, monospace" font-size="24" fill="#163e2e">Responses</text>
+    <text x="44" y="442" fill="#c9a45c">PK ResponseId</text>
+    <text x="44" y="462" fill="#9fbf7f">FK SurveyId</text>
+    <text x="44" y="482" fill="#eef0d6">SubmittedAt</text>
+
+    <!-- Answers -->
+    <rect x="400" y="390" width="230" height="154" fill="#1d3324" stroke="#b5523b" stroke-width="3"/>
+    <rect x="400" y="390" width="230" height="30" fill="#b5523b"/>
+    <text x="414" y="412" font-family="VT323, monospace" font-size="24" fill="#fffce9">Answers</text>
+    <text x="414" y="442" fill="#c9a45c">PK AnswerId</text>
+    <text x="414" y="462" fill="#9fbf7f">FK ResponseId</text>
+    <text x="414" y="482" fill="#9fbf7f">FK QuestionId</text>
+    <text x="414" y="502" fill="#9fbf7f">FK OptionId (boş olabilir)</text>
+    <text x="414" y="522" fill="#eef0d6">TextValue</text>
+  </g>
+  <!-- Options -> Answers (dashed, optional) -->
+  <path d="M845 230 V470 H630" stroke="#c9a45c" stroke-width="3" fill="none" stroke-dasharray="8 6"/>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#c9a45c">
+    <text x="855" y="250">1</text><text x="642" y="462">N</text>
+  </g>
+  <text x="680" y="560" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">Kesikli çizgi: metin sorularında OptionId boş kalır.</text>
+</svg>

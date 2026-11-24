@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" shape-rendering="crispEdges">
+  <rect width="1000" height="620" fill="#163e2e"/>
+  <rect x="20" y="20" width="960" height="580" fill="#1d3324" stroke="#9fbf7f" stroke-width="3"/>
+  <rect x="20" y="20" width="960" height="36" fill="#9fbf7f"/>
+  <text x="38" y="46" font-family="VT323, monospace" font-size="26" fill="#163e2e">ANKET OLUŞTURUCU</text>
+  <rect x="920" y="28" width="20" height="20" fill="#eef0d6" stroke="#163e2e" stroke-width="2"/>
+  <rect x="948" y="28" width="20" height="20" fill="#b5523b" stroke="#163e2e" stroke-width="2"/>
+
+  <!-- left: question types -->
+  <rect x="40" y="76" width="200" height="504" fill="#244b37"/>
+  <text x="56" y="106" font-family="VT323, monospace" font-size="24" fill="#fffce9">SORU TİPLERİ</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#163e2e">
+    <rect x="56" y="124" width="168" height="38" fill="#eef0d6"/><text x="70" y="148">( ) Tek seçim</text>
+    <rect x="56" y="172" width="168" height="38" fill="#eef0d6"/><text x="70" y="196">[x] Çoklu seçim</text>
+    <rect x="56" y="220" width="168" height="38" fill="#eef0d6"/><text x="70" y="244">Aa Kısa metin</text>
+    <rect x="56" y="268" width="168" height="38" fill="#eef0d6"/><text x="70" y="292">1–5 Puanlama</text>
+  </g>
+  <text x="56" y="340" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">Sürükle, ortaya bırak</text>
+
+  <!-- center: questions -->
+  <text x="264" y="106" font-family="VT323, monospace" font-size="28" fill="#fffce9">Ders memnuniyet anketi</text>
+  <rect x="260" y="122" width="460" height="196" fill="#163e2e" stroke="#8ccf88" stroke-width="3"/>
+  <text x="278" y="150" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#fffce9">S1. Ders anlatımı ne kadar anlaşılırdı?</text>
+  <text x="704" y="150" text-anchor="end" font-family="Tahoma, Verdana, sans-serif" font-size="12" fill="#c9a45c">zorunlu</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">
+    <circle cx="288" cy="180" r="7" fill="none" stroke="#eef0d6" stroke-width="2"/><text x="304" y="185">Çok anlaşılır</text>
+    <circle cx="288" cy="210" r="7" fill="none" stroke="#eef0d6" stroke-width="2"/><text x="304" y="215">Anlaşılır</text>
+    <circle cx="288" cy="240" r="7" fill="none" stroke="#eef0d6" stroke-width="2"/><text x="304" y="245">Kararsızım</text>
+    <circle cx="288" cy="270" r="7" fill="none" stroke="#eef0d6" stroke-width="2"/><text x="304" y="275">Anlaşılmadı</text>
+  </g>
+  <text x="278" y="304" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#8ccf88">+ seçenek ekle</text>
+
+  <rect x="260" y="334" width="460" height="104" fill="#163e2e" stroke="#9fbf7f" stroke-width="2"/>
+  <text x="278" y="362" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#fffce9">S2. Önerilerin neler?</text>
+  <rect x="278" y="378" width="424" height="40" fill="#244b37" stroke="#9fbf7f" stroke-width="1"/>
+  <text x="290" y="403" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">Kısa metin yanıtı…</text>
+
+  <rect x="260" y="454" width="460" height="52" fill="none" stroke="#9fbf7f" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="490" y="486" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="15" fill="#9fbf7f">+ Yeni soru</text>
+
+  <!-- right: settings -->
+  <rect x="740" y="76" width="220" height="504" fill="#244b37"/>
+  <text x="756" y="106" font-family="VT323, monospace" font-size="24" fill="#fffce9">AYARLAR</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="14" fill="#eef0d6">
+    <text x="756" y="140">Durum</text>
+    <rect x="756" y="150" width="188" height="30" fill="#163e2e" stroke="#8ccf88" stroke-width="2"/><text x="768" y="170" fill="#8ccf88">Açık</text>
+    <text x="756" y="210">Paylaşım bağlantısı</text>
+    <rect x="756" y="220" width="188" height="30" fill="#163e2e" stroke="#9fbf7f" stroke-width="2"/>
+    <text x="766" y="240" font-family="VT323, monospace" font-size="18" fill="#fffce9">/a/7KQ2-XM9P</text>
+    <rect x="756" y="260" width="90" height="30" fill="#c9a45c"/><text x="801" y="280" text-anchor="middle" fill="#163e2e">Kopyala</text>
+    <text x="756" y="324">Tekrar gönderim</text>
+    <rect x="756" y="334" width="188" height="30" fill="#163e2e" stroke="#9fbf7f" stroke-width="2"/><text x="768" y="354">Engelle</text>
+  </g>
+  <rect x="756" y="520" width="188" height="40" fill="#b5523b"/>
+  <text x="850" y="546" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#fffce9">KAYDET</text>
+  <text x="490" y="580" text-anchor="middle" font-family="Tahoma, Verdana, sans-serif" font-size="12" fill="#9fbf7f">tasarım çizimi</text>
+</svg>

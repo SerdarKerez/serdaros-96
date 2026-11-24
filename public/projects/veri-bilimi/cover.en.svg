@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="2" fill="#000" opacity="0.16"/>
+    </pattern>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#244b37" stroke-width="1"/>
+    </pattern>
+    <radialGradient id="glow" cx="50%" cy="50%" r="65%">
+      <stop offset="0" stop-color="#244b37"/>
+      <stop offset="1" stop-color="#163e2e"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#1d3324"/>
+  <rect x="30" y="30" width="1140" height="570" rx="28" fill="#0f2419" stroke="#9fbf7f" stroke-width="4"/>
+  <rect x="54" y="54" width="1092" height="522" rx="18" fill="url(#glow)"/>
+  <rect x="54" y="54" width="1092" height="522" rx="18" fill="url(#grid)" opacity="0.6"/>
+
+  <rect x="54" y="54" width="1092" height="40" fill="#9fbf7f"/>
+  <text x="76" y="83" font-family="VT323, monospace" font-size="28" fill="#163e2e">C:\SERDAROS\PROJECT\DATA_SCIENCE</text>
+  <rect x="1060" y="62" width="24" height="24" fill="#eef0d6" stroke="#163e2e" stroke-width="2"/>
+  <rect x="1094" y="62" width="24" height="24" fill="#b5523b" stroke="#163e2e" stroke-width="2"/>
+
+  <text x="90" y="176" font-family="VT323, monospace" font-size="76" fill="#fffce9">DATA SCIENCE</text>
+  <text x="90" y="244" font-family="VT323, monospace" font-size="76" fill="#8ccf88">PROJECTS</text>
+  <text x="92" y="292" font-family="Tahoma, Verdana, sans-serif" font-size="22" fill="#eef0d6">Systems Analysis and Design I</text>
+  <text x="92" y="322" font-family="Tahoma, Verdana, sans-serif" font-size="18" fill="#9fbf7f">NumPy · pandas · Seaborn · scikit-learn</text>
+
+  <!-- module chips -->
+  <g font-family="VT323, monospace" font-size="24">
+    <rect x="90" y="370" width="300" height="40" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="106" y="398" fill="#eef0d6">&gt; MANIPULATION_101</text>
+    <rect x="90" y="422" width="300" height="40" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+    <text x="106" y="450" fill="#eef0d6">&gt; MANIPULATION_201</text>
+    <rect x="90" y="474" width="300" height="40" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+    <text x="106" y="502" fill="#c9a45c">&gt; PREPROCESSING</text>
+  </g>
+  <text x="92" y="546" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#9fbf7f">github.com/SerdarKerez</text>
+
+  <!-- dataframe panel -->
+  <rect x="620" y="130" width="480" height="230" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+  <rect x="620" y="130" width="480" height="30" fill="#244b37"/>
+  <text x="634" y="152" font-family="VT323, monospace" font-size="22" fill="#8ccf88">&gt;&gt;&gt; df.head()</text>
+  <g font-family="Tahoma, Verdana, sans-serif" font-size="15">
+    <text x="680" y="190" fill="#c9a45c">V1</text>
+    <text x="790" y="190" fill="#c9a45c">V2</text>
+    <text x="900" y="190" fill="#c9a45c">V3</text>
+    <text x="1000" y="190" fill="#c9a45c">group</text>
+    <line x1="634" y1="200" x2="1086" y2="200" stroke="#244b37" stroke-width="2"/>
+    <g fill="#9fbf7f"><text x="640" y="226">0</text><text x="640" y="254">1</text><text x="640" y="282">2</text><text x="640" y="310">3</text><text x="640" y="338">4</text></g>
+    <g fill="#eef0d6">
+      <text x="680" y="226">1.0</text><text x="790" y="226">7.0</text><text x="1000" y="226">IT</text>
+      <text x="680" y="254">3.0</text><text x="900" y="254">12.0</text><text x="1000" y="254">IT</text>
+      <text x="680" y="282">6.0</text><text x="790" y="282">5.0</text><text x="900" y="282">5.0</text><text x="1000" y="282">HR</text>
+      <text x="790" y="310">8.0</text><text x="900" y="310">6.0</text><text x="1000" y="310">HR</text>
+      <text x="680" y="338">7.0</text><text x="790" y="338">12.0</text><text x="900" y="338">14.0</text><text x="1000" y="338">HR</text>
+    </g>
+    <g fill="#b5523b"><text x="900" y="226">NaN</text><text x="790" y="254">NaN</text><text x="680" y="310">NaN</text></g>
+  </g>
+
+  <!-- boxplot -->
+  <rect x="620" y="384" width="480" height="160" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+  <text x="634" y="410" font-family="VT323, monospace" font-size="22" fill="#8ccf88">sns.boxplot(x=df_table)</text>
+  <line x1="680" y1="480" x2="1040" y2="480" stroke="#244b37" stroke-width="2"/>
+  <line x1="720" y1="470" x2="790" y2="470" stroke="#eef0d6" stroke-width="3"/>
+  <line x1="720" y1="454" x2="720" y2="486" stroke="#eef0d6" stroke-width="3"/>
+  <rect x="790" y="446" width="140" height="48" fill="#244b37" stroke="#8ccf88" stroke-width="3"/>
+  <line x1="850" y1="446" x2="850" y2="494" stroke="#c9a45c" stroke-width="4"/>
+  <line x1="930" y1="470" x2="990" y2="470" stroke="#eef0d6" stroke-width="3"/>
+  <line x1="990" y1="454" x2="990" y2="486" stroke="#eef0d6" stroke-width="3"/>
+  <rect x="680" y="464" width="10" height="10" fill="#b5523b"/>
+  <rect x="1020" y="464" width="10" height="10" fill="#b5523b"/>
+  <rect x="1046" y="464" width="10" height="10" fill="#b5523b"/>
+  <text x="1086" y="530" text-anchor="end" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f">sample data</text>
+
+  <rect x="54" y="54" width="1092" height="522" rx="18" fill="url(#scan)"/>
+</svg>

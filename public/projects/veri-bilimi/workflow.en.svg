@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" shape-rendering="crispEdges">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#244b37" stroke-width="1"/>
+    </pattern>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#c9a45c"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#1d3324"/>
+  <rect width="1200" height="520" fill="url(#grid)" opacity="0.5"/>
+  <text x="40" y="58" font-family="VT323, monospace" font-size="40" fill="#fffce9">DATA PREPARATION FLOW</text>
+  <text x="42" y="88" font-family="Tahoma, Verdana, sans-serif" font-size="17" fill="#9fbf7f">The repo's three modules map to the steps from raw data to model-ready data</text>
+
+  <!-- module bands -->
+  <g font-family="VT323, monospace" font-size="22">
+    <rect x="40" y="120" width="330" height="30" fill="#244b37"/>
+    <text x="54" y="142" fill="#8ccf88">MANIP. 101 · NumPy</text>
+    <rect x="390" y="120" width="250" height="30" fill="#244b37"/>
+    <text x="404" y="142" fill="#8ccf88">MANIP. 201 · pandas</text>
+    <rect x="660" y="120" width="500" height="30" fill="#244b37"/>
+    <text x="674" y="142" fill="#c9a45c">PREPROCESSING · pandas + scikit-learn</text>
+  </g>
+
+  <!-- steps -->
+  <g font-family="Tahoma, Verdana, sans-serif">
+    <g>
+      <rect x="40" y="190" width="150" height="150" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+      <text x="115" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">01</text>
+      <text x="115" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Raw data</text>
+      <text x="115" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">np.array</text>
+      <text x="115" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">load_dataset</text>
+    </g>
+    <g>
+      <rect x="220" y="190" width="150" height="150" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+      <text x="295" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">02</text>
+      <text x="295" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Reshape</text>
+      <text x="295" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">reshape</text>
+      <text x="295" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">concat · split</text>
+    </g>
+    <g>
+      <rect x="400" y="190" width="220" height="150" fill="#163e2e" stroke="#9fbf7f" stroke-width="3"/>
+      <text x="510" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">03</text>
+      <text x="510" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Select · join · summarize</text>
+      <text x="510" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">loc · iloc · merge</text>
+      <text x="510" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">groupby · pivot_table</text>
+    </g>
+    <g>
+      <rect x="660" y="190" width="150" height="150" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+      <text x="735" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">04</text>
+      <text x="735" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Missing data</text>
+      <text x="735" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">fillna · dropna</text>
+      <text x="735" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">missingno · KNN</text>
+    </g>
+    <g>
+      <rect x="835" y="190" width="150" height="150" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+      <text x="910" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">05</text>
+      <text x="910" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Outliers</text>
+      <text x="910" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">IQR · capping</text>
+      <text x="910" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">LOF</text>
+    </g>
+    <g>
+      <rect x="1010" y="190" width="150" height="150" fill="#163e2e" stroke="#c9a45c" stroke-width="3"/>
+      <text x="1085" y="230" text-anchor="middle" font-family="VT323, monospace" font-size="30" fill="#fffce9">06</text>
+      <text x="1085" y="262" text-anchor="middle" font-size="16" fill="#eef0d6">Transform</text>
+      <text x="1085" y="290" text-anchor="middle" font-size="13" fill="#9fbf7f">scale · MinMax</text>
+      <text x="1085" y="310" text-anchor="middle" font-size="13" fill="#9fbf7f">one-hot</text>
+    </g>
+  </g>
+  <g stroke="#c9a45c" stroke-width="3" marker-end="url(#ar)">
+    <line x1="192" y1="265" x2="216" y2="265"/>
+    <line x1="372" y1="265" x2="396" y2="265"/>
+    <line x1="622" y1="265" x2="656" y2="265"/>
+    <line x1="812" y1="265" x2="831" y2="265"/>
+    <line x1="987" y1="265" x2="1006" y2="265"/>
+  </g>
+
+  <!-- next step -->
+  <rect x="40" y="390" width="1120" height="90" fill="#163e2e" stroke="#244b37" stroke-width="3" stroke-dasharray="10 6"/>
+  <text x="64" y="428" font-family="VT323, monospace" font-size="28" fill="#8ccf88">&gt; NEXT STEP: MODEL</text>
+  <text x="64" y="458" font-family="Tahoma, Verdana, sans-serif" font-size="16" fill="#eef0d6">Regression / classification on prepared data, a Pipeline and a small ETL flow into SQL</text>
+</svg>

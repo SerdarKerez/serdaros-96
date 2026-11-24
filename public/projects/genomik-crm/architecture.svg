@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="560" viewBox="0 0 1200 560">
+<defs><pattern id="sl" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="2" fill="#000" opacity="0.18"/></pattern>
+<marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0 L10 5 L0 10 z" fill="#c9a45c"/></marker></defs>
+<rect width="1200" height="560" fill="#163e2e"/>
+<text x="40" y="58" font-family="VT323, monospace" font-size="44" fill="#fffce9">SİSTEM MİMARİSİ</text>
+<text x="480" y="56" font-family="VT323, monospace" font-size="24" fill="#c9a45c">genomik katman + CRM katmanı</text>
+<text x="40" y="112" font-family="VT323, monospace" font-size="24" fill="#9fbf7f">GENOMİK KATMAN</text>
+<g font-family="Tahoma, Verdana, sans-serif" text-anchor="middle">
+<rect x="40" y="130" width="180" height="120" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><rect x="40" y="130" width="180" height="34" fill="#9fbf7f"/>
+<text x="130" y="155" font-family="VT323, monospace" font-size="24" fill="#163e2e">YÜKLEME</text>
+<text x="130" y="195" font-size="14" fill="#eef0d6">TLS + imzalı URL</text><text x="130" y="220" font-size="14" fill="#eef0d6">format kontrolü</text>
+<rect x="270" y="130" width="180" height="120" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><rect x="270" y="130" width="180" height="34" fill="#9fbf7f"/>
+<text x="360" y="155" font-family="VT323, monospace" font-size="24" fill="#163e2e">NESNE DEPOSU</text>
+<text x="360" y="195" font-size="14" fill="#eef0d6">şifreli ham dosya</text><text x="360" y="220" font-size="14" fill="#eef0d6">saklama süresi</text>
+<rect x="500" y="130" width="180" height="120" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><rect x="500" y="130" width="180" height="34" fill="#9fbf7f"/>
+<text x="590" y="155" font-family="VT323, monospace" font-size="24" fill="#163e2e">İŞLEME HATTI</text>
+<text x="590" y="190" font-size="14" fill="#eef0d6">normalize · QC</text><text x="590" y="212" font-size="14" fill="#eef0d6">anotasyon</text><text x="590" y="234" font-size="14" fill="#eef0d6">sınıflandırma</text>
+<rect x="730" y="130" width="200" height="120" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><rect x="730" y="130" width="200" height="34" fill="#9fbf7f"/>
+<text x="830" y="155" font-family="VT323, monospace" font-size="24" fill="#163e2e">PARQUET</text>
+<text x="830" y="192" font-size="13" fill="#eef0d6">chrom=1/ chrom=2/ …</text><text x="830" y="216" font-size="13" fill="#eef0d6">chrom=X/ chrom=MT/</text>
+<rect x="980" y="130" width="180" height="120" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/><rect x="980" y="130" width="180" height="34" fill="#9fbf7f"/>
+<text x="1070" y="155" font-family="VT323, monospace" font-size="24" fill="#163e2e">VERİ AMBARI</text>
+<text x="1070" y="195" font-size="14" fill="#eef0d6">dw.variants</text><text x="1070" y="220" font-size="14" fill="#eef0d6">dw.annotations</text>
+</g>
+<g stroke="#c9a45c" stroke-width="3" marker-end="url(#ar)">
+<line x1="222" y1="190" x2="266" y2="190"/><line x1="452" y1="190" x2="496" y2="190"/><line x1="682" y1="190" x2="726" y2="190"/><line x1="932" y1="190" x2="976" y2="190"/>
+</g>
+<rect x="500" y="280" width="180" height="40" fill="#1d3324" stroke="#9fbf7f" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="590" y="306" font-family="Tahoma, Verdana, sans-serif" font-size="13" fill="#9fbf7f" text-anchor="middle">sürümlü referans DB'ler</text>
+<line x1="590" y1="280" x2="590" y2="254" stroke="#9fbf7f" stroke-width="2" stroke-dasharray="4 4"/>
+<!-- bridge -->
+<rect x="20" y="342" width="1160" height="2" fill="#9fbf7f" opacity="0.5"/>
+<rect x="390" y="327" width="420" height="32" fill="#c9a45c"/>
+<text x="600" y="350" font-family="VT323, monospace" font-size="24" fill="#163e2e" text-anchor="middle">ORTAK ANAHTAR: sample_id</text>
+<text x="40" y="398" font-family="VT323, monospace" font-size="24" fill="#9fbf7f">CRM KATMANI (SQL)</text>
+<g font-family="Tahoma, Verdana, sans-serif">
+<rect x="40" y="414" width="200" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="56" y="442" font-family="VT323, monospace" font-size="20" fill="#fffce9">crm.customers</text>
+<text x="56" y="470" font-size="13" fill="#eef0d6">customer_id · ad · iletişim</text><text x="56" y="494" font-size="13" fill="#eef0d6">notlar · randevular</text>
+<rect x="280" y="414" width="200" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="296" y="442" font-family="VT323, monospace" font-size="20" fill="#fffce9">crm.samples</text>
+<text x="296" y="470" font-size="13" fill="#eef0d6">sample_id · customer_id</text><text x="296" y="494" font-size="13" fill="#eef0d6">deleted_at</text>
+<rect x="520" y="414" width="200" height="110" fill="#244b37" stroke="#c9a45c" stroke-width="3"/>
+<text x="536" y="442" font-family="VT323, monospace" font-size="20" fill="#fffce9">crm.consents</text>
+<text x="536" y="470" font-size="13" fill="#eef0d6">scope · granted_at</text><text x="536" y="494" font-size="13" fill="#eef0d6">revoked_at</text>
+<rect x="760" y="414" width="190" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="776" y="442" font-family="VT323, monospace" font-size="20" fill="#fffce9">crm.reports</text>
+<text x="776" y="470" font-size="13" fill="#eef0d6">sample_id · şablon</text><text x="776" y="494" font-size="13" fill="#eef0d6">db_version</text>
+<rect x="990" y="414" width="170" height="110" fill="#244b37" stroke="#9fbf7f" stroke-width="3"/>
+<text x="1006" y="442" font-family="VT323, monospace" font-size="20" fill="#fffce9">crm.audit_log</text>
+<text x="1006" y="470" font-size="13" fill="#eef0d6">kim · ne · ne zaman</text>
+</g>
+<g stroke="#9fbf7f" stroke-width="2"><line x1="240" y1="469" x2="280" y2="469"/><line x1="480" y1="469" x2="520" y2="469"/><line x1="720" y1="469" x2="760" y2="469"/></g>
+<line x1="1070" y1="254" x2="1070" y2="340" stroke="#c9a45c" stroke-width="3" stroke-dasharray="6 4"/>
+<line x1="855" y1="410" x2="855" y2="346" stroke="#c9a45c" stroke-width="3" stroke-dasharray="6 4"/>
+<text x="1060" y="545" font-family="Tahoma, Verdana, sans-serif" font-size="12" fill="#9fbf7f" text-anchor="end">Konsept şema · ad/iletişim bilgisi genomik katmana inmez</text>
+<rect width="1200" height="560" fill="url(#sl)"/>
+</svg>
